@@ -1,0 +1,30 @@
+
+<html>
+<head>
+	<title>ex5</title>
+</head>
+<body>
+
+<script type="text/javascript">
+function longestWord(string) {
+    var str = string.split(" ");
+    var longest = 0;
+    var word = null;
+    for (var i = 0; i < str.length; i++) {
+        if (longest < str[i].length) {
+            longest = str[i].length;
+            word = str[i];
+        }
+    }
+    return word;
+}
+document.write("Answer is :- "+longestWord("I'm a little tea pot"));
+</script>
+
+</body>
+</html>
+
+
+
+
+
