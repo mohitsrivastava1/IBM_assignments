@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<!-- Check the given Input is string or not -->
+
+<html>
+
+<head>
+
+	<title>ex10</title>
+
+</head>
+
+<body>
+
+<script type="text/javascript">
+
+	function check_input()
+
+	{
+
+		var input = prompt("Enter a String","");
+
+		var pat = /^[a-zA-Z]+$/g ;
+
+		if(!isNaN(input))
+
+			alert("Given Input is Number");
+
+		else if(input == input.match(pat))
+
+			alert("Given Input is String");
+
+		else
+
+			alert("Type Mismatch");
+
+	}
+
+</script>
+
+<button onclick="check_input();"> Click Me!</button>
+
+</body>
+
+</html>

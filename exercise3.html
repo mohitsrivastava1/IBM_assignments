@@ -1,0 +1,20 @@
+<html>
+<head>
+	<title>ex3</title>
+</head>
+<body>
+
+<script type="text/javascript">
+var y=prompt("Input a string:- ");
+var ans=lexico(y);
+
+function lexico(str)
+{
+  var arr = str.split('');
+  var sorted = arr.sort();
+  return sorted.join('');
+}
+document.write("Sorted string is : - "+ans);
+</script>
+</body>
+</html>
