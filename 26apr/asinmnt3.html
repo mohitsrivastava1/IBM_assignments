@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--Fetch and display the href attribute value of last link in the current document-->
+<html>
+<body>
+
+<p>
+  <a href="html">HTML</a><br>
+  <a href="css">CSS</a><br>
+<a href="javascript">Javascript</a><br>
+<a href=mysql">MySQL</a><br>
+<a href="corejava">Core Java</a><br>
+</p>
+
+<p>Click the button to display the href value of the last link in the document.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+var len=document.links.length;
+  var x = document.links[len-1].href;
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
+
+</body>
+</html> 
