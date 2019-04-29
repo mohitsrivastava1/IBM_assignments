@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--On click of a button, make second word of every div in bold-->
+<html>
+<head>
+	<title>ex2</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+
+<body>
+
+	<button>Make Bold</button>
+
+	<div> First Sample division</div>
+
+	<div> Second Sample division</div>
+
+	<div> Third Other division</div>
+
+	<div> Fourth Sample division</div>
+
+	<script type="text/javascript">
+
+		$(document).ready(function() 
+
+		{
+
+			$("button").click(function() 
+
+			{
+
+				$('div').each(function(index) 
+
+				{
+
+					console.log(index);
+
+					console.log($(this).text());
+
+					var word = $(this).html().split(" ")[2];
+
+					console.log(word);
+
+					//$(this).html().split(" ")[2].replace("Other");
+
+					//$(this).text().replace(word,"<b>other</b>");
+
+					$(this).html($(this).text().replace(word,'<b>'+word+'</b>'));
+
+					//console.log(arr);
+
+					// arr.css('font-weight', 'bold'); 
+
+					
+
+				});
+
+			});
+
+			
+
+		});
+
+			
+
+	
+
+	</script>
+
+</body>
+
+</html>
