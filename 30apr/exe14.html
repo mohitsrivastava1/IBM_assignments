@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--When the user presses a key in the text field, a bootstrap style warning alert should come saying "Enter data in this field is prohibited!-->
+<html>
+
+<head>
+
+	<title>exe14</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+	<input type="text" id="input1" placeholder="Enter Text Here...">
+
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+
+  		$("input").keypress(function(){
+
+   			alert("Entering data in this field is prohibited");
+
+  		});
+
+		});
+
+	</script>
+
+</body>
+
+</html>
