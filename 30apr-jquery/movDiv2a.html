@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--Move an element from one DIV to another.-->
+<html>
+<head>
+	<title>exe2a</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="myDiv1">
+    <p>A paragraph of text</p> 
+  </div>
+
+  <div id="myDiv2">
+  	<p>hi check...</p>
+  </div>
+  <button class="mButton">Move</button>
+<script type="text/javascript">
+$(document).ready(function() {
+  $(".mButton").click(function() {
+
+ // Move the paragraph from #myDiv1 to #myDiv2
+  $('#myDiv2').append( $('#myDiv1>p') );
+  //document.getElementById("myDiv1");
+
+});
+});
+
+</script>
+
+  
+
+</body>
+</html>

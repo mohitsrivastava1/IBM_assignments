@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--Add a new row dynamically to the table.-->
+<html>
+
+<head>
+
+	<title>exe10</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+<style type="text/css">
+
+	table{
+
+		border: 1px solid black;
+
+	}
+
+</style>
+
+<table id="tbl">
+
+  <tr><th>Name</th><th>Phone</th><th>Location.</th></tr>
+
+   <tr><td>Mohit</td><td>1111111111</td><td>Lucknow</td></tr> 
+
+   <tr><td>Sachin</td><td>2222222222</td><td>Mumbai</td></tr> 
+
+   <tr><td>Akshay</td><td>3333333333</td><td>Delhi</td></tr> 
+
+
+
+</table>
+<button id="btn">Add row</button>
+
+
+	<script type="text/javascript">
+
+		$(document).ready(function() 
+
+		{
+			$("#btn").click(function(){
+			var n=prompt("Enter Name:");
+
+			var p=prompt("Enter Phone:");
+
+			var l=prompt("Enter Location:");
+
+			$("#tbl").append("<tr><td>"+n+"</td><td>"+p+"</td><td>"+l+"</td></tr>");
+			
+			
+		});
+            
+		});
+
+	</script>
+
+</body>
+
+</html>

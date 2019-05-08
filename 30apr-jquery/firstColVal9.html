@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!-- Get the value of first column in a table.-->
+<html>
+<head>
+	<title>exe9</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+  </head>
+
+
+<body>
+
+<table id = "tbl" border="1px solid black;">
+
+	<tr>
+
+		<td>Name</td>
+
+		<td>Phone</td>
+
+	</tr>
+
+	
+
+	<tr>
+		<td>Mohit</td>
+
+        <td>1234567890</td>
+    </tr>
+
+	
+
+	<tr>
+		<td>Sachin</td>
+
+		<td>9087654321</td>
+
+	</tr>
+
+</table>
+
+<button id="demo">click me</button>
+
+<script type="text/javascript">
+
+  $(document).ready(function($) {
+  var a = [];
+
+$("#tbl tr").each(function(){
+
+    a.push($(this).find("td:first").text());
+
+});
+
+$("#demo").click(function(){
+for (var i=0;i<a.length;i++)
+
+{
+
+document.write(a[i] + "<br >");
+
+}
+});
+ });
+
+</script>
+</body>
+
+</html>

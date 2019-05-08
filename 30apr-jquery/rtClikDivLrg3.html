@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--On right click inside a div, make the div box larger-->
+<html>
+<head>
+	<title>exe3</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <style>
+  div {
+    background: blue;
+    color: white;
+    height: 100px;
+    width: 150px;
+ }
+  div.contextmenu {
+  	height: 200px;
+    width: 300px;
+    
+  }
+  </style>
+  </head>
+<body>
+ 
+<div></div>
+<span>Right click the block</span>
+ 
+<script>
+	$(document).ready(function(){
+	$("div").contextmenu(function() {
+  	$("div").toggleClass( "contextmenu",true );
+
+});});
+
+	</script>
+
+</body>
+
+</html>

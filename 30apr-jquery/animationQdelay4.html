@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- Delay the execution of subsequent items in the animation queue.-->
+<html>
+<head>
+	<title>exe4</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+  </head>
+  <body>
+
+    <button class="mButton">Animate with delay...</button>
+    <div class="moreTextContainer" style="border: 1px solid #000; background-color: blue;margin-right: 0px; padding: 10px; position: absolute; right: 20%; bottom: 20%; width: 100px; height: 80px;">
+        Trying some JQuery fun here...
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            
+    
+            
+    
+            $(".mButton").click(function() {
+                
+                //Using animate with a queue and delay.
+                $(".moreTextContainer").animate({height: '200px'}, 'slow');
+                $(".moreTextContainer").delay(1000).animate({opacity: '0.2'}, 'slow');
+                $(".moreTextContainer").delay(1100).animate({width: '200px'}, 'slow');
+                $(".moreTextContainer").delay(1200).animate({height: '80px'}, 'slow');
+                $(".moreTextContainer").delay(1300).animate({opacity: '1'}, 'slow');
+                $(".moreTextContainer").delay(1400).animate({width: '100px'}, 'slow');
+            });
+    
+        });
+    </script>
+    </body>
+    </html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!-- Set the focus to the first input box of a form..-->
+<html>
+<head>
+	<title>exe5</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+  </head>
+  <body>
+
+    <form action="#" name="frm" >
+       Enter Name - <input type="text"><br>
+    Enter Password - <input type="password"><br>
+    <input type="submit">
+    </form>
+    <script>
+        $(document).ready(function() {
+    $("form input").first().focus();
+});
+    </script>
+    </body>
+    </html>

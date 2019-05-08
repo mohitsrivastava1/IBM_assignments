@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--delete the last row in a table-->
+<html>
+
+<head>
+
+	<title>exe11</title>
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+
+<script type="text/javascript">
+
+  $(document).ready(function() {
+
+     $("#btn").click(function() {
+
+      
+
+  $("#tbl").each(function(){
+
+    $(this).find("tr:last").remove();
+
+});
+
+ });
+
+ });
+
+</script>
+
+
+
+<table id="tbl">
+
+	
+
+  <tr><th>Name</th><th>Phone</th><th>Location</th></tr>
+
+   <tr><td>Mohit</td><td>1111111111</td><td>Lucknow</td></tr> 
+
+   <tr><td>Sachin</td><td>2222222222</td><td>Mumbai</td></tr> 
+
+   <tr><td>Akshay</td><td>3333333333</td><td>Delhi</td></tr> 
+
+
+
+</table>
+
+<button id="btn">Remove</button>
+
+
+
+</body>
+
+</html>
