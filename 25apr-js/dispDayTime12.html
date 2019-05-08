@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--Write a JavaScript program to display the current day and time in the following format.  Go to the editor
+Today : Friday. 
+Time is : 3 AM : 45 : 21-->
+<html>
+
+<head>
+
+	<title>Current Date and Time</title>
+
+</head>
+
+<body>
+
+<script type="text/javascript">
+
+
+
+	CurrentDate();
+
+	function CurrentDate()
+
+	{
+
+		var date = new Date();
+
+		var weekday = new Array(7);
+			weekday[0] = "Sunday";
+			weekday[1] = "Monday";
+
+			weekday[2] = "Tuesday";
+
+			weekday[3] = "Wednesday";
+
+			weekday[4] = "Thursday";
+
+			weekday[5] = "Friday";
+
+			weekday[6] = "Saturday";
+
+
+
+		var n = weekday[date.getDay()];
+
+		console.log("Today:" +n);
+
+		DisplayCurrentTime();
+
+		
+
+		
+
+	}
+
+	function DisplayCurrentTime() 
+
+	{
+
+        var date = new Date();
+
+        var hours = date.getHours() > 12 ? date.getHours() - 12 : date.getHours();
+
+        var am_pm = date.getHours() >= 12 ? "PM" : "AM";
+
+        hours = hours < 10 ? "0" + hours : hours;
+
+        var minutes = date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes();
+
+        var seconds = date.getSeconds() < 10 ? "0" + date.getSeconds() : date.getSeconds();
+
+        time = hours +" " + am_pm +":" + minutes + ":" + seconds;
+
+        console.log("Time is:" +time);
+
+    }
+
+</script>
+
+</body>
+
+</html>

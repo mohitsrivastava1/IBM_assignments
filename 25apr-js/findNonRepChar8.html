@@ -1,0 +1,74 @@
+
+
+<!-- Finding Non-Repeating character in a string -->
+
+<html>
+
+<head>
+
+	<title>ex8</title>
+
+</head>
+
+<body>
+
+<script type="text/javascript">
+
+	// 
+
+function find_NotRepeatedChar(str) 
+
+{
+
+  var arra1 = str.split('');
+
+  var result = '';
+
+  var ctr = 0;
+
+ 
+
+  for (var x = 0; x < arra1.length; x++) {
+
+    ctr = 0;
+
+ 
+
+    for (var y = 0; y < arra1.length; y++) 
+
+    {
+
+      if (arra1[x] == arra1[y]) {
+
+        ctr += 1;
+
+      }
+
+    }
+
+ 
+
+    if (ctr < 2) {
+
+      result = arra1[x];
+
+      break;
+
+    }
+
+  }
+
+  //for(var i in result)
+
+  	document.write(result);
+
+}
+
+find_NotRepeatedChar('abababc');
+
+</script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--Write a JavaScript program to converts a specified number to an array of digits. -->
+<html>
+<head>
+	<title>ex2</title>
+</head>
+<body>
+
+<script type="text/javascript">
+var i=0;
+var arr = [];
+var y=prompt("Input a no..");
+while(y!=0)
+{
+arr[i]=y%10;
+y=Math.floor(y/10);
+i++;
+}
+document.write("The array is :- ");
+for(i=arr.length-1;i!=-1;i--)
+{
+document.write(arr[i]);
+}
+</script>
+</body>
+</html>
