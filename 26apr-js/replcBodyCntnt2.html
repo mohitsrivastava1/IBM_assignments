@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<!--Take a prompt input from user and replace the body content with new data-->
+<html>
+<head><title>ex2</title></head>
+<body onload="newData();">
+
+<p id="demo">Old Data</p>
+
+<script>
+function newData()
+{
+var inp=prompt("Enter new data :-");
+document.getElementById("demo").innerHTML = inp;
+}
+</script>
+
+</body>
+</html>

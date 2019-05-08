@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--Disable the combo dropdown on click of a button-->
+<html>
+<head><title>ex5</title></head>
+<body>
+
+<form>
+  <select id="mySelect">
+    <option>Cats</option>
+    <option>Dogs</option>
+  </select>
+</form>
+
+<p>Click the button to disable the dropdown list.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  document.getElementById("mySelect").disabled = true;
+}
+</script>
+
+</body>
+</html>
